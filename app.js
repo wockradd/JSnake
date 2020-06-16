@@ -12,7 +12,7 @@ window.requestAnimationFrame(main)
 function main(currentTime){
     if (snake.checkDeath()) {
         if (confirm('You lost. Press ok to restart.')) {
-          window.location = '/JSnake'
+          window.location = ''
         }
         return
     }
