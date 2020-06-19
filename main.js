@@ -1,3 +1,5 @@
+var PORT = process.env.PORT || 8080
+
 var http = require('http');
 
 var nStatic = require('node-static');
@@ -8,4 +10,4 @@ http.createServer(function (req, res) {
     
     fileServer.serve(req, res);
 
-}).listen(8080);
+}).listen(PORT);
